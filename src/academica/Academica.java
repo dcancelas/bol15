@@ -2,13 +2,13 @@ package academica;
 
 public class Academica {
 
-    private float numReferencia = 2020;
+    private int numReferencia = 2020;
     private String nome;
     private float nota;
 
     public Academica() {
     }
-    public Academica(float numReferencia, String nome, float nota) {
+    public Academica(int numReferencia, String nome, float nota) {
         this.numReferencia = numReferencia;
         this.nome = nome;
         this.nota = nota;
@@ -18,7 +18,7 @@ public class Academica {
         return numReferencia;
     }
 
-    public void setNumReferencia(float numReferencia) {
+    public void setNumReferencia(int numReferencia) {
         this.numReferencia = numReferencia;
     }
 
@@ -41,9 +41,9 @@ public class Academica {
     @Override
     public String toString() {
         return "Academica{" +
-                "numReferencia=" + numReferencia +
-                ", nome='" + nome + '\'' +
-                ", nota=" + nota +
+                "Número referencia: " + numReferencia +
+                ", Nome: '" + nome + '\'' +
+                ", Nota: " + nota +
                 '}';
     }
 }
